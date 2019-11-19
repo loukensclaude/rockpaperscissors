@@ -5,15 +5,26 @@
 //GLOBAL VARIABLES
 /* global $ */
 
+
 $("document").ready(function() {
+
+    
+
     $("#shoot").click (function() {
+        let num = [1, 2, 3];
+        
         let word = $("#input").val();
 
-        $("#userChoice").text(word);
+        let theNum = num.random();
         
+        $("#userChoice").text("theNum");
 
     });
 
+//     git status
+// git add .
+// git commit -m "Your message here"
+// git push origin master
 
 
 });
