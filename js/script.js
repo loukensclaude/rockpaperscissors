@@ -8,6 +8,8 @@
 
 $("document").ready(function() {
 
+let userScore = 0;
+let computerScore = 0;
     
 
 $(".button").click (function() {
@@ -32,15 +34,21 @@ $(".button").click (function() {
         }
         else if (word == "rock" && computer_choice == "paper") {
           $(".output3").text("You lose");
-          $("body").css("background", "red")
+          computerScore += 1;
+          $(".computerScore").text(computerScore);
+          $("body").css("background", "lightcoral")
         }
         else if (word == "rock" && computer_choice == "scissor") {
           $(".output3").text("You Win");
-          $("body").css("background", "green")
+          userScore += 1;
+          $(".warning").text(userScore);
+          $("body").css("background", "lightgreen")
         }
         else if (word == "paper" && computer_choice == "rock") {
           $(".output3").text("You Win");
-          $("body").css("background", "green")
+          userScore += 1;
+          $(".warning").text(userScore);
+          $("body").css("background", "lightgreen")
         }
         else if (word == "paper" && computer_choice == "paper") {
           $(".output3").text("You tied");
@@ -48,22 +56,28 @@ $(".button").click (function() {
         }
         else if (word == "paper" && computer_choice == "scissor") {
           $(".output3").text("You lose");
-          $("body").css("background", "red")
+          computerScore += 1;
+          $(".computerScore").text(computerScore);
+          $("body").css("background", "lightcoral")
         }
         else if (word == "scissor" && computer_choice == "rock") {
           $(".output3").text("You lose");
-          $("body").css("background", "red")
+          computerScore += 1;
+          $(".computerScore").text(computerScore);
+          $("body").css("background", "lightcoral")
         }
         else if (word == "scissor" && computer_choice == "paper") {
           $(".output3").text("You Win");
-          $("body").css("background", "green")
+          userScore += 1;
+          $(".warning").text(userScore);
+          $("body").css("background", "lightgreen")
         }
         else if (word == "scissor" && computer_choice == "scissor") {
           $(".output3").text("You tied");
           $("body").css("background", "gray")
         }
         else {
-          alert("There seems to be an error. Please check if your choice is spelled correctly.");
+          $(".warning").text("There seems to be an error. Please check if your choice is spelled correctly.");
         }
     });
 
