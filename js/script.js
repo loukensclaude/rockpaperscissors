@@ -14,7 +14,7 @@ let computerScore = 0;
 
 $(".button").click (function() {
       
-    let possible_outcomes = ['rock', 'paper', 'scissor'];
+    let possible_outcomes = ['rock', 'paper', 'scissors'];
 
     let word = $(".input").val();
 
@@ -44,7 +44,7 @@ $(".button").click (function() {
           $(".win").hide();
           $("body").css("background", "lightcoral")
         }
-        else if (word == "rock" && computer_choice == "scissor") {
+        else if (word == "rock" && computer_choice == "scissors") {
           $(".output3").text("You Win");
           userScore += 1;
           $(".userScore").text(userScore);
@@ -69,7 +69,7 @@ $(".button").click (function() {
           $(".win").hide();
           $("body").css("background", "gray")
         }
-        else if (word == "paper" && computer_choice == "scissor") {
+        else if (word == "paper" && computer_choice == "scissors") {
           $(".output3").text("You lose");
           computerScore += 1;
           $(".computerScore").text(computerScore);
@@ -78,7 +78,7 @@ $(".button").click (function() {
           $(".win").hide();
           $("body").css("background", "lightcoral")
         }
-        else if (word == "scissor" && computer_choice == "rock") {
+        else if (word == "scissors" && computer_choice == "rock") {
           $(".output3").text("You lose");
           computerScore += 1;
           $(".computerScore").text(computerScore);
@@ -87,7 +87,7 @@ $(".button").click (function() {
           $(".tie").hide();
           $("body").css("background", "lightcoral")
         }
-        else if (word == "scissor" && computer_choice == "paper") {
+        else if (word == "scissors" && computer_choice == "paper") {
           $(".output3").text("You Win");
           userScore += 1;
           $(".userScore").text(userScore);
@@ -96,7 +96,7 @@ $(".button").click (function() {
           $(".tie").hide();
           $("body").css("background", "lightgreen")
         }
-        else if (word == "scissor" && computer_choice == "scissor") {
+        else if (word == "scissors" && computer_choice == "scissors") {
           $(".output3").text("You tied");
           $(".tie").show();
           $(".win").hide();
@@ -119,3 +119,5 @@ $(".button").click (function() {
 // DOCUMENT READY FUNCTION BELOW
 
 // python3 -m http.server 3000
+
+//https://github.com/loukensclaude/rockpaperscissorss.git
