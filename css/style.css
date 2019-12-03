@@ -11,3 +11,22 @@
 body{
     color: black;
 }
+
+.win {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.lose {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.tie {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+

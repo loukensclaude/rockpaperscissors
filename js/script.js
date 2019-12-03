@@ -30,50 +30,77 @@ $(".button").click (function() {
 
         if (word == "rock" && computer_choice == "rock") {
           $(".output3").text("You are tied");
+          $(".tie").show();
+          $(".win").hide();
+          $(".lose").hide();
           $("body").css("background", "gray")
         }
         else if (word == "rock" && computer_choice == "paper") {
           $(".output3").text("You lose");
           computerScore += 1;
           $(".computerScore").text(computerScore);
+          $(".lose").show();
+          $(".tie").hide();
+          $(".win").hide();
           $("body").css("background", "lightcoral")
         }
         else if (word == "rock" && computer_choice == "scissor") {
           $(".output3").text("You Win");
           userScore += 1;
-          $(".warning").text(userScore);
+          $(".userScore").text(userScore);
+          $(".win").show();
+          $(".lose").hide();
+          $(".tie").hide();
           $("body").css("background", "lightgreen")
         }
         else if (word == "paper" && computer_choice == "rock") {
           $(".output3").text("You Win");
           userScore += 1;
-          $(".warning").text(userScore);
+          $(".userScore").text(userScore);
+          $(".win").show();
+          $(".tie").hide();
+          $(".lose").hide();
           $("body").css("background", "lightgreen")
         }
         else if (word == "paper" && computer_choice == "paper") {
           $(".output3").text("You tied");
+          $(".tie").show();
+          $(".lose").hide();
+          $(".win").hide();
           $("body").css("background", "gray")
         }
         else if (word == "paper" && computer_choice == "scissor") {
           $(".output3").text("You lose");
           computerScore += 1;
           $(".computerScore").text(computerScore);
+          $(".lose").show();
+          $(".tie").hide();
+          $(".win").hide();
           $("body").css("background", "lightcoral")
         }
         else if (word == "scissor" && computer_choice == "rock") {
           $(".output3").text("You lose");
           computerScore += 1;
           $(".computerScore").text(computerScore);
+          $(".lose").show();
+          $(".win").hide();
+          $(".tie").hide();
           $("body").css("background", "lightcoral")
         }
         else if (word == "scissor" && computer_choice == "paper") {
           $(".output3").text("You Win");
           userScore += 1;
-          $(".warning").text(userScore);
+          $(".userScore").text(userScore);
+          $(".win").show();
+          $(".lose").hide();
+          $(".tie").hide();
           $("body").css("background", "lightgreen")
         }
         else if (word == "scissor" && computer_choice == "scissor") {
           $(".output3").text("You tied");
+          $(".tie").show();
+          $(".win").hide();
+          $(".lose").hide();
           $("body").css("background", "gray")
         }
         else {
