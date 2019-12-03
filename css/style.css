@@ -12,19 +12,19 @@ body{
     color: black;
 }
 
-.win {
+.win{
     width: 200px;
     height: 200px;
     display: none;
 }
 
-.lose {
+.lose{
     width: 200px;
     height: 200px;
     display: none;
 }
 
-.tie {
+.tie{
     width: 200px;
     height: 200px;
     display: none;
