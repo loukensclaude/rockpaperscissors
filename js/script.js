@@ -113,7 +113,6 @@ $(".button").click (function() {
 // git commit -m "Your message here"
 // git push origin master
 
-
 });
 
 // DOCUMENT READY FUNCTION BELOW
